@@ -1,4 +1,4 @@
-## ----------------------------Skin Lesion Classification - Benign vs Malignant
+## ----------------------------Skin Lesion Classification
 
 ## Description
 
@@ -82,6 +82,6 @@ Optimisation pour un déploiement sur le web ou mobile
 
 Amélioration de l’interface pour afficher un historique des images et des prédictions
 
-Auteur
+## Auteur ##
 
-## Yasmine El Mkhantar
+** Yasmine El Mkhantar **
