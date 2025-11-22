@@ -1,87 +1,123 @@
-## ----------------------------Skin Lesion Classification
+# **Skin Lesion Classification – Benign vs Malignant**
 
-## Description
+## **🩺 Description**
 
-Ce projet propose une application interactive pour la classification d’images de lésions cutanées en deux catégories : bénignes ou malignes.
-Le modèle repose sur un réseau de neurones convolutif (CNN) entraîné avec PyTorch pour reconnaître et prédire automatiquement le type de lésion à partir d’images dermatologiques.
+Ce projet présente une application interactive permettant de classifier des images de lésions cutanées en deux catégories :
 
-L’application inclut une interface Streamlit intuitive permettant de téléverser des images, d’obtenir la prédiction ainsi que les probabilités associées à chaque classe de manière visuelle.
+* **Benign (bénigne)**
+* **Malignant (maligne)**
 
-## Fonctionnalités
+Le modèle repose sur un **réseau de neurones convolutif (CNN) entraîné avec PyTorch**, capable d’analyser une image dermatologique et de prédire automatiquement sa classe.
 
-Téléversement d’images dermatologiques (JPEG, PNG)
+L’application inclut une interface **Streamlit moderne et intuitive**, offrant :
 
-Prédiction en temps réel de la classe : Benign ou Malignant
+* Téléchargement d’images
+* Prédiction immédiate du modèle
+* Visualisation des probabilités sous forme de graphique
 
-Affichage interactif des probabilités par classe sous forme de barplot
+---
 
-Interface simple et responsive grâce à Streamlit
+## **✨ Fonctionnalités principales**
 
-Compatible CPU et GPU pour accélérer les prédictions
+* Téléversement d’images dermatologiques (JPG, PNG)
+* Prédiction en temps réel : **Benign ou Malignant**
+* Affichage des probabilités par classe sous forme de diagramme
+* Interface simple, responsive et ergonomique
+* Compatible CPU et GPU
+* Reproductible et facile à déployer
 
-## Structure du projet
+---
+
+## **📦 Structure du projet**
+
+```
 Skin_Lesion_Classification/
 │
-├─ model.py            # Contient la définition de la classe CNN
-├─ app.py              # Interface Streamlit interactive
-├─ Skin_Lesion_Classification.ipynb  # Notebook d'entraînement et d'évaluation du modèle      
-├─ .gitignore          # Fichiers ignorés par Git
-└─ README.md           # Documentation du projet
+├── model.py                           # Définition de l'architecture CNN
+├── app.py                             # Interface Streamlit
+├── Skin_Lesion_Classification.ipynb   # Notebook d'entraînement et d'évaluation
+├── .gitignore                         # Fichiers ignorés par Git
+└── README.md                          # Documentation du projet
+```
 
-## Installation
+---
 
-### Cloner le dépôt :
+## **⚙️ Installation**
 
-git clone https://github.com/yasmine-elmkh/Medical-Computer-Vision.git
-cd Medical-Computer-Vision
+### **1️⃣ Cloner le dépôt**
 
+```bash
+git clone https://github.com/yasmine-elmkh/Skin_Lesion_Classification.git
+cd Skin_Lesion_Classification
+```
 
-### Créer et activer un environnement virtuel (optionnel mais recommandé) :
+### **2️⃣ Créer et activer un environnement virtuel (recommandé)**
 
+```bash
 python -m venv .venv
-#Windows
+```
+
+#### **Windows**
+
+```bash
 .venv\Scripts\activate
-#macOS / Linux
+```
+
+#### **macOS / Linux**
+
+```bash
 source .venv/bin/activate
+```
 
+### **3️⃣ Installer les dépendances**
 
-### Installer les dépendances :
-
+```bash
 pip install torch torchvision streamlit pillow pandas altair
+```
 
-## Utilisation
+---
 
-Lancer l’interface Streamlit :
+## **🚀 Utilisation**
 
+Lancer l’application Streamlit :
+
+```bash
 streamlit run app.py
+```
 
+Cela ouvrira automatiquement une page web dans votre navigateur.
 
-Une page web s’ouvre automatiquement.
+Vous pourrez alors :
 
-Cliquez sur “Choisissez une image” pour téléverser votre image.
+1. **Téléverser une image dermatologique**
+2. **Obtenir la prédiction du modèle**
+3. **Visualiser les probabilités associées**
 
-Visualisez la prédiction et les probabilités associées.
+---
 
-## Modèle
+## **🧠 Modèle**
 
-Architecture : CNN simple avec 3 couches convolutionnelles, max pooling et 2 couches fully connected
+* **Architecture :** CNN avec
 
-Données d’entraînement : Images de lésions cutanées classées en benign et malignant
+  * 3 couches convolutionnelles
+  * Max-pooling
+  * 2 couches fully connected
+* **Données d’entraînement :** Images de lésions cutanées (benign vs malignant)
+* **Framework :** PyTorch
+* **Poids enregistrés :** `simple_cnn.pth`
 
-Framework : PyTorch
+---
 
-Fichier de poids : simple_cnn.pth
+## **🔭 Améliorations futures**
 
-Améliorations futures
+* Multiclassification (plus de types de lésions dermatologiques)
+* Intégration de **Grad-CAM / heatmaps** pour expliquer les prédictions
+* Déploiement cloud ou mobile
+* Historique des prédictions dans l’interface
+* Amélioration du design UI/UX
 
-Ajouter la détection multi-classes pour d’autres types de lésions dermatologiques
+---
 
-Intégration de grad-CAM ou heatmaps pour visualiser les zones d’intérêt du modèle
+## **👤 Auteur**
 
-Optimisation pour un déploiement sur le web ou mobile
-
-Amélioration de l’interface pour afficher un historique des images et des prédictions
-
-## Auteur ##
-
-** Yasmine El Mkhantar **
+**Yasmine El Mkhantar**
