@@ -1,13 +1,13 @@
-##----------------------------Skin Lesion Classification - Benign vs Malignant
+## ----------------------------Skin Lesion Classification - Benign vs Malignant
 
-##Description
+## Description
 
 Ce projet propose une application interactive pour la classification d’images de lésions cutanées en deux catégories : bénignes ou malignes.
 Le modèle repose sur un réseau de neurones convolutif (CNN) entraîné avec PyTorch pour reconnaître et prédire automatiquement le type de lésion à partir d’images dermatologiques.
 
 L’application inclut une interface Streamlit intuitive permettant de téléverser des images, d’obtenir la prédiction ainsi que les probabilités associées à chaque classe de manière visuelle.
 
-##Fonctionnalités
+## Fonctionnalités
 
 Téléversement d’images dermatologiques (JPEG, PNG)
 
@@ -19,7 +19,7 @@ Interface simple et responsive grâce à Streamlit
 
 Compatible CPU et GPU pour accélérer les prédictions
 
-##Structure du projet
+## Structure du projet
 Skin_Lesion_Classification/
 │
 ├─ model.py            # Contient la définition de la classe CNN
@@ -28,28 +28,28 @@ Skin_Lesion_Classification/
 ├─ .gitignore          # Fichiers ignorés par Git
 └─ README.md           # Documentation du projet
 
-##Installation
+## Installation
 
-###Cloner le dépôt :
+### Cloner le dépôt :
 
 git clone https://github.com/yasmine-elmkh/Medical-Computer-Vision.git
 cd Medical-Computer-Vision
 
 
-###Créer et activer un environnement virtuel (optionnel mais recommandé) :
+### Créer et activer un environnement virtuel (optionnel mais recommandé) :
 
 python -m venv .venv
-# Windows
+#Windows
 .venv\Scripts\activate
-# macOS / Linux
+#macOS / Linux
 source .venv/bin/activate
 
 
-###Installer les dépendances :
+### Installer les dépendances :
 
 pip install torch torchvision streamlit pillow pandas altair
 
-##Utilisation
+## Utilisation
 
 Lancer l’interface Streamlit :
 
@@ -62,7 +62,7 @@ Cliquez sur “Choisissez une image” pour téléverser votre image.
 
 Visualisez la prédiction et les probabilités associées.
 
-##Modèle
+## Modèle
 
 Architecture : CNN simple avec 3 couches convolutionnelles, max pooling et 2 couches fully connected
 
@@ -84,4 +84,4 @@ Amélioration de l’interface pour afficher un historique des images et des pr�
 
 Auteur
 
-#Yasmine El Mkhantar
+## Yasmine El Mkhantar
