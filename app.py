@@ -6,6 +6,7 @@ from model import SimpleCNN
 import pandas as pd
 import altair as alt
 
+
 # Charger le modèle
 model = SimpleCNN()
 model.load_state_dict(torch.load("simple_cnn.pth", map_location='cpu'))

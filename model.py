@@ -19,3 +19,4 @@ class SimpleCNN(nn.Module):
         x = x.view(-1, 128 * 28 * 28)
         x = F.relu(self.fc1(x))
         return self.fc2(x)
+

@@ -8,10 +8,11 @@ __pycache__/
 *.log
 *.sqlite3
 
+
 # ----------------------------
 # Virtual environment
 # ----------------------------
-.venv/
+.venv/ 
 env/
 venv/
 
